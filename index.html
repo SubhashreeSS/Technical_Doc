@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Technical Documentation</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav id="navbar" style="background-color: rgb(255, 184, 184) ;">
+            <img src="../Mini Projects (NS)/html5_logo.png" alt="HTML 5 logo" style="float:left ;padding:15px 5px 0px 10px" height="100px" width="80px">
+            <header>HTML Documentation</header> <hr color= "darkgreen" size="8px">
+            <ul>
+                <li><a href="#Introduction">HTML Introduction</a></li>
+                <li><a href="#Basic">HTML Basic</a></li>
+                <!-- <li><a href="#Elements">HTML Elements</a></li> -->
+                <!-- <li><a href="#Attributes">HTML Attributes</a></li> -->
+                <!-- <li><a href="#Heading">HTML Heading</a></li> -->
+                <!-- <li><a href="#Paragraph">HTML Paragraph</a></li> -->
+                
+                <!-- <li><a href="#Links">HTML Links</a></li> -->
+                <li><a href="#Media">HTML Media</a></li>
+                <li><a href="#Tables">HTML Tables</a></li>
+                <li><a href="#Font Styles">HTML Font Styles</a></li>
+                <!-- <li><a href="#Formatting">HTML Formatting</a></li> -->
+            </ul>
+            <!-- <img src="F:\Mini Projects (NS)\image\html5_logo.png" alt="HTML 5 logo" style="float:left ;padding:15px 5px 0px 0px" height="100px" width="65px"> -->
+        </nav>
+        
+        <main id="main-doc">
+            <section id="Introduction">
+                <header><b>Introduction</b></header>
+                <article>
+                    <p>
+                        <b>HTML</b> stands for <b>Hyper Text Markup Language</b>, which is the most widely used language on Web to develop web pages. 
+                        HTML was created by Berners-Lee in late 1991 but "HTML 2.0" was the first standard HTML specification which was 
+                        published in 1995. HTML 4.01 was a major version of HTML and it was published in late 1999. Though HTML 4.01 
+                        version is widely used but currently we are having HTML-5 version which is an extension to HTML 4.01, and this 
+                        version was published in 2012.
+                    </p>
+                    <p><b>Why to Learn HTML?</b></p>
+                    <p>
+                        Originally, HTML was developed with the intent of defining the structure of documents like headings, paragraphs, 
+                        lists, and so forth to facilitate the sharing of scientific information between researchers. Now, HTML is being 
+                        widely used to format web pages with the help of different tags available in HTML language.
+                    </p>
+                    <p>
+                        HTML is a MUST for students and working professionals to become a great Software Engineer specially when they 
+                        are working in Web Development Domain. I will list down some of the key advantages of learning HTML:
+                    </p>
+                    <ul>
+                        <li type="square">
+                        <b>Create Web site</b> - You can create a website or customize an existing web template if you know HTML well.
+                        </li>
+                        <li type="square">
+                            <b>Become a web designer</b> - If you want to start a carrer as a professional web designer, HTML and CSS designing 
+                            is a must skill.
+                        </li>
+                        <li type="square">
+                            <b>Understand web</b> - If you want to optimize your website, to boost its speed and performance, it is good to know 
+                            HTML to yield best results.
+                        </li>
+                        <li type="square">
+                            <b>Learn other languages</b> - Once you understands the basic of HTML then other related technologies like javascript, 
+                            php, or angular are become easier to understand.
+                        </li>
+                    </ul>
+                </article>
+            </section>
+            <section id="Basic">
+                <header><b>HTML Basics</b></header>
+                <article>
+                    <p><b>Title Tags</b></p>
+                    <p>
+                        The &lt;title&gt; tag defines the title of the document. The title must be text-only, and it is shown in the browser's title bar or in the page's tab. <br>
+                        The &lt;title&gt; tag is required in HTML documents! <br>
+                        The contents of a page title is very important for search engine optimization (SEO)! The page title is used by search engine algorithms to decide the order when listing pages in search results. <br>
+
+                        The &lt;title&gt; element:
+                            <ul>
+                                <li>defines a title in the browser toolbar</li>
+                                <li>provides a title for the page when it is added to favorites</li>
+                                <li>displays a title for the page in search-engine results</li>
+                            </ul> <br>
+                        Here are some tips for creating good titles:
+                            <ul>
+                                <li>Go for a longer, descriptive title (avoid one- or two-word titles)</li>
+                                <li>Search engines will display about 50-60 characters of the title, so try not to have titles longer than that</li>
+                                <li>Do not use just a list of words as the title (this may reduce the page's position in search results)</li>
+                            </ul><br>
+                        So, try to make the title as accurate and meaningful as possible!    <br>
+                            
+                            
+                        <b>Note</b>: You can NOT have more than one &lt;title&gt; element in an HTML document.
+                    </p> <br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            <b>&lt;title&gt;<b>This is the title of the document.</b>&lt;/title&gt;</b><br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+
+                            &lt;h1&gt;This is a heading&lt;/h1&gt;<br>
+                            &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code>
+                    </p><br>
+
+
+                    <p><b>body Tags</b></p>
+                    <p>
+                        The &lt;body&gt; tag defines the document's body.
+                        The &lt;body&gt; element contains all the contents of an HTML document, such as headings, paragraphs, images, hyperlinks, tables, lists, etc. <br>
+                        <b>Note:</b> There can only be one &lt;body&gt; element in an HTML document.
+                    </p> <br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                              &lt;title&gt;Title of the document&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            
+                            &lt;body&gt;<br>
+                              &lt;p&gt;This line is within <b>body Tag</b>&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            
+                            &lt;/html&gt;<br>
+                        </code><br>
+                        <b>Output</b>
+                        <code id="output">
+                            <body>
+                                <p>This line is within <b>body Tag</b></p>
+                            </body>
+                        </code>
+                    </p><br>
+                    <p><b>Heading Tags</b></p>
+                    <p>
+                        Any document starts with a heading. You can use different sizes for your headings. HTML also has six levels of headings, 
+                        which use the elements  &lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, and &lt;h6&gt;. While displaying any 
+                        heading, browser adds one line before and one line after that heading.
+                    </p>
+                    <br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Heading Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+        
+                            &lt;body&gt;<br>
+                            <b>&lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+                            &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+                            &lt;h3&gt;This is heading 3&lt;/h3&gt;<br>
+                            &lt;h4&gt;This is heading 4&lt;/h4&gt;<br>
+                            &lt;h5&gt;This is heading 5&lt;/h5&gt;<br>
+                            &lt;h6&gt;This is heading 6&lt;/h6&gt;<br></b>
+                            &lt;/body&gt;<br>
+        
+                            &lt;/html&gt;<br>
+                        </code> <br>
+                        <p><b>Output</b></p>
+                        <code id="output">
+            
+                            <h1 style="font-size:30px ;">This is heading 1</h1>
+                            <h2>This is heading 2</h2>
+                            <h3>This is heading 3</h3>
+                            <h4>This is heading 4</h4>
+                            <h5>This is heading 5</h5>
+                            <h6>This is heading 6</h6>
+                            
+                        </code>
+                    </p><br>
+                    <p><b>Paragraph Tag</b></p>
+                    <p>
+                        The  &lt;p&gt; tag offers a way to structure your text into different paragraphs. Each paragraph of text should go in between an 
+                        opening &lt;p&gt; and a closing &lt;/p&gt; tag as shown below in the example :- <br> <br> 
+                    </p><br> 
+                    <p>
+                        <p><b>Example: </b></p>
+                    
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Paragraph Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+        
+                            &lt;body&gt;<br>
+                            <b>&lt;p&gt;This is Paragraph 1 text&lt;/p&gt;<br>
+                            &lt;p&gt;This is Paragraph 2 text&lt;/p&gt;<br>
+                            &lt;p&gt;This is Paragraph 3 text&lt;/p&gt;<br></b>
+                            &lt;/body&gt;<br>
+        
+                            &lt;/html&gt;<br>
+                        </code> <br>
+                        <p><b>Output</b> </p>
+                        <code id="output">
+                            <p>This is Paragraph 1 text</p>
+                            <p>This is Paragraph 2 text</p>
+                            <p>This is Paragraph 3 text</p>
+
+                        </code>
+
+                    </p> <br>
+                    <p><b>Line Break Tag</b></p>
+                    <p>Whenever you use the <b> &lt;br /&gt; </b>element, anything following it starts from the next line. This tag is an example of an <b>empty</b> element, 
+                    where you do not need opening and closing tags, as there is nothing to go in between them. <br> The &lt;br /&gt; tag has a space between the 
+                    characters <b>br</b> and the forward slash. If you omit this space, older browsers will have trouble rendering the line break, while if you miss 
+                    the forward slash character and just use &lt;br&gt; it is not valid in XHTML.</p><br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt; <br>
+
+                            &lt;head&gt;<br>
+                                &lt;title&gt;Line Break  Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                                
+                            &lt;body&gt;<br>
+                                &lt;p&gt;Hey!<b>&lt;br /&gt;</b><br>
+                                    Take time to do<b>&lt;br /&gt;</b><br>
+                                    What makes your soul<b>&lt;br /&gt;</b><br>
+                                    HAPPY :) &lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                                
+                            &lt;/html&gt;<br>
+                        </code> <br>
+                        <p><b>Output</b></p>
+                        <code id="output">
+                            <p>Hey! <br> Take time to do <br> What makes your soul <br> HAPPY :) </p>
+
+                        </code>
+                    </p> <br>
+                    <p><b>Anchor Tag</b></p>
+                    <p>The <a> tag defines a hyperlink, which is used to link from one page to another.
+                        The most important attribute of the <a> element is the href attribute, which indicates the link's destination. <br>By default, links will appear as follows in all browsers:</p>
+                    <p>
+                        <ul>
+                            <li type="square">An unvisited link is underlined and blue</li>
+                            <li type="square">A visited link is underlined and purple</li>
+                            <li type="square">An active link is underlined and red</li>
+
+                        </ul>
+                    </p>
+                        <p>
+                            <p><b>Example: </b></p>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h2&gt;Anchor Example&lt;/h2&gt;<br>
+                                &lt;p&gt;HTML links are defined with the a tag:&lt;/p&gt;<br>
+
+                                <b>&lt;a href="https://www.newtonschool.co/"&gt;This is Newton School link&lt;/a&gt;<br></b>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code><br>
+                            <p><b>Output</b></p>
+                            <code id="output">
+                                <!DOCTYPE html>
+                                <html>
+                                <body>
+
+                                <h2>HTML Links</h2>
+                                <p>HTML links are defined with the &lt;a&gt; tag:</p>
+
+                                <a href="https://www.newtonschool.co/">This is Newton School link</a>
+
+                                </body>
+                                </html>
+                            </code>
+                        </p><br>
+                        <p><b>Division Tag or 'div'Tag</b></p>
+                        <p>
+                            The div element is a generic container that you can use to add more structure to your page content. For example, you might group several paragraphs 
+                            or headings that serve a similar purpose together inside a div element. Typically, div elements are used for things like: <br>
+                            <ul>
+                                <li>Page headers and footers</li>
+                                <li>Columns of content and sidebars</li>
+                                <li>Highlighted boxes within the text flow</li>
+                                <li>Areas of the page with a specific purpose, such as ad spots</li>
+                                <li>Image galleries</li>
+                            </ul>
+                            By adding class and/or id attributes to your div elements, you can then use CSS to style and position the divs. This is the basis for creating CSS-based page layouts.<br>
+                        </p><br>
+                        <p>
+                            <p><b>Example: </b></p>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Division Example&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+        
+                            &lt;body&gt;<br>
+                        <b> &lt;div id="sidebar"&gt;<br>
+                            &lt;h1&gt;Sidebar Heading&lt;/h1&gt;<br>
+                            &lt;p&gt;Sidebar text&lt;/p&gt;<br>
+                            &lt;p&gt;More Sidebar text&lt;/p&gt;<br>
+                            &lt;/div&gt;<br></b>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                            </code><br>
+                            <p><b>Output</b></p>
+                            <code id="output">
+                                <div id="sidebar">
+                                    <h1>Sidebar Heading</h1>
+                                    <p>Sidebar text</p>
+                                    <p>More sidebar text</p>
+                                </div>
+                            </code>
+                        </p><br>
+                        <p><b>Span Tag</b></p>
+                        <p>
+                            The span element is similar to div in that its used to add structure to your content. The difference is that div is a block-level element, while span is an inline element:
+                            <ul>
+                                <li><b>Block-level elements</b>, such as div, h1, and p, are elements that are designed to hold relatively large or stand-alone blocks of content, such as paragraphs of text. A block-level element always starts on a new line.</li>
+                                <li><b>Inline elements</b>, such as span, a, and img, are designed to hold smaller pieces of content — such as a few words or a sentence — within a larger block of content. Adding an inline element doesn’t cause a new line to be created. Block-level elements can contain inline elements, but inline elements can not contain block-level elements.</li>
+                            </ul>
+
+                        </p><br>
+                        <p>
+                            <p><b>Example: </b></p>
+                        
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The span element&lt;/h1&gt;<br>
+
+                                &lt;p&gt;My recent mobile colour is <b>&lt;span style="color:blue;font-weight:bold"&gt;blue&lt;/span&gt;</b> but I want a &lt;span style="color:darkolivegreen;font-weight:bold"&gt;dark green&lt;/span&gt; colour iPhone.&lt;/p&gt;<br>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code><br>
+                            <p><b>Output</b></p>
+                            <code id="output">
+                                <!DOCTYPE html>
+                                <html>
+                                <body>
+                                <h1>The span element</h1>
+                                <p>My recent mobile colour is <span style="color:blue;font-weight:bold">blue</span> but I want a <span style="color:darkolivegreen;font-weight:bold">dark green</span> colour iPhone.</p>
+                                </body>
+                                </html>
+                            </code><br>
+                        </p><br>
+                        <p><b>Button Tag</b></p>
+                        <p>
+                            The &lt;button&gt; tag defines a clickable button.
+                            Inside a &lt;button&gt; element you can put text (and tags like &lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;br&gt;, &lt;img&gt;, etc.). That is not possible with a button created with the &lt;input&gt; element! <br>
+                            Tip: 
+                            <ul>
+                                <li>Always specify the type attribute for a &lt;button&gt; element, to tell browsers what type of button it is.</li>
+                                <li>You can easily style buttons with CSS! Look at the examples below or visit our CSS Buttons tutorial.</li>
+                            </ul>
+                            <br>
+                            <p><b>Example: </b></p>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;The button Element&lt;/h1&gt; <br>
+
+                                <b>&lt;button type="button" onclick="alert('Hello world!')">Click Me!&lt;/button&gt;</b> <br>
+                                
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+
+                            </code> <br>
+                            <b>Output</b>
+                            <code id="output">
+                                <button type="button" onclick="alert('Hello world!')">Click Me!</button>
+                            </code><br>
+
+                            <p><b>Code Tag</b></p>
+                            <p>
+                                The &lt;code&gt; tag is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font. <br>
+                                Tip: This tag is not deprecated. However, it is possible to achieve richer effect by using CSS (see example below).
+
+                                <p><b>Example: </b></p>
+                                <p>
+                                    <code>
+                                        &lt;!DOCTYPE html&gt; <br>
+                                        &lt;html&gt; <br>
+                                        &lt;body&gt; <br>
+
+                                        &lt;h1&gt;The code element&lt;/h1&gt; <br>
+
+                                        &lt;p&gt;The HTML <b>&lt;code&gt;button&lt;/code&gt; </b>tag defines a clickable button.&lt;/p&gt; <br>
+
+                                        &lt;p&gt;The CSS <b>&lt;code&gt;background-color&lt;/code&gt;</b> property defines the background color of an element.&lt;/p&gt; <br>
+
+                                        &lt;/body&gt; <br>
+                                        &lt;/html&gt; <br>
+                                    </code> <br>
+                                </p> <br>
+                                <p><b>Output</b></p>
+                                <!DOCTYPE html>
+                                <html>
+                                <body>
+
+                                <h1>The code element</h1>
+
+                                <p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+                                <p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+                                </body>
+                                </html>
+                            </p>
+                        </p> <br>
+                        <p><b>Main Tag</b></p>
+                        <p>
+                            The &lt;main&gt; tag specifies the main content of a document.
+                            The content inside the &lt;main&gt; element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms. <br>
+                            <b>Note:</b>There must not be more than one &lt;main&gt; element in a document. The &lt;main&gt; element must NOT be a descendant of an &lt;article&gt;, &lt;aside&gt;, &lt;footer&gt;, &lt;header&gt;, or &lt;nav&gt; element. <br>
+                            <p><b>Example: </b></p>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The main element&lt;/h1&gt;<br>
+                                <b>
+                                &lt;main&gt;<br>
+                                &lt;h1&gt;Most Popular Browsers&lt;/h1&gt; <br>
+                                &lt;p&gt;Chrome, Firefox, and Edge are the most used browsers today.&lt;/p&gt;<br>
+
+                                &lt;article&gt;<br>
+                                    &lt;h2&gt;Google Chrome&lt;/h2&gt; <br>
+                                    &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;<br>
+                                &lt;/article&gt;<br>
+                                &lt;article&gt;<br>
+                                    &lt;h2&gt;Mozilla Firefox&lt;/h2&gt; <br>
+                                    &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;<br>
+                                &lt;/article&gt;<br>
+
+                                &lt;article&gt;<br>
+                                    &lt;h2>Microsoft Edge&lt;/h2&gt; <br>
+                                    &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;<br>
+                                &lt;/article&gt;<br>
+                                &lt;/main&gt;<br>
+                                </b>
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code>
+                            <p><b>Output</b></p>
+                            <code id="output">
+                                <main>
+                                    <h1>Most Popular Browsers</h1>
+                                    <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+                                  
+                                    <article>
+                                      <h2>Google Chrome</h2>
+                                      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+                                    </article>
+                                  
+                                    <article>
+                                      <h2>Mozilla Firefox</h2>
+                                      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+                                    </article>
+                                  
+                                    <article>
+                                      <h2>Microsoft Edge</h2>
+                                      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+                                    </article>
+                                  </main>
+                            </code>
+                        </p> <br>
+                        <p><b>List Tag</b></p>
+                        <p>
+                            The &lt;li&gt; tag defines a list item.
+                            The &lt;li&gt; tag is used inside ordered lists(&lt;ol&gt;), unordered lists (&lt;ul&gt;), and in menu lists (&lt;menu&gt;).
+                            In &lt;ul&gt; and &lt;menu&gt;, the list items will usually be displayed with bullet points.
+                            In &lt;ol&gt;, the list items will usually be displayed with numbers or letters. <br>
+                            <b>Tip:</b> Use CSS to style lists.
+                            <br>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;The ol and ul elements&lt;/h1&gt; <br>
+
+                                &lt;p&gt;The ol element defines an ordered list:&lt;/p&gt; <br>
+                                <b>
+                                &lt;ol&gt; <br>
+                                &lt;li&gt;Coffee&lt;/li&gt; <br>
+                                &lt;li&gt;Tea&lt;/li&gt; <br>
+                                &lt;li&gt;Milk&lt;/li&gt; <br>
+                                &lt;/ol&gt; <br>
+
+                                &lt;p&gt;The ul element defines an unordered list:&lt;/p&gt; <br>
+                                &lt;ul&gt; <br>
+                                &lt;li&gt;Coffee&lt;/li&gt; <br>
+                                &lt;li&gt;Tea&lt;/li&gt; <br>
+                                &lt;li&gt;Milk&lt;/li&gt; <br>
+                                &lt;/ul&gt; <br> </b>
+
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+
+                            </code> <br>
+                            <b>Output</b>
+                            <code id="output">
+                                <ol>
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ol>
+                                  
+                                <ul>
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ul>
+                            </code>
+                        </p><br>
+                        <p><b>Order List Tag</b></p>
+                        <p>
+                            The &lt;ol&gt; tag defines an ordered list. An ordered list can be numerical or alphabetical.
+                            The &lt;li&gt; tag is used to define each list item.
+                            Tip:
+                            <ul>
+                                <li>Use CSS to style lists.</li>
+                                <li>For unordered list, use the &lt;ul&gt; tag. </li>
+                            </ul> 
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The ol element&lt;/h1&gt;<br>
+                                <b>
+                                &lt;ol&gt;<br>
+                                &lt;li&gt;Coffee&lt;/li&gt;<br>
+                                &lt;li&gt;Tea&lt;/li&gt;<br>
+                                &lt;li&gt;Milk&lt;/li&gt;<br>
+                                &lt;/ol&gt;<br>
+
+                                &lt;ol start="50"&gt;<br>
+                                &lt;li&gt;Coffee&lt;/li&gt;<br>
+                                &lt;li&gt;Tea&lt;/li&gt;<br>
+                                &lt;li&gt;Milk&lt;/li&gt;<br>
+                                &lt;/ol&gt;<br> </b>
+                                
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code> <br>
+                            <b>Output</b>
+                            <code id="output">
+                                <ol>
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ol>
+                                  
+                                <ol start="50">
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ol>
+                            </code>
+                        </p><br>
+                        <p><b>Un-Order List Tag</b></p>
+                        <p>
+                            The &lt;ul&gt; tag defines an unordered (bulleted) list.
+                            Use the &lt;ul&gt; tag together with the &lt;li&gt; tag to create unordered lists.
+                            Tip: Use CSS to style lists. <br>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;The ul element&lt;/h1&gt; <br>
+                                <b>
+                                &lt;ul&gt; <br>
+                                &lt;li&gt;Coffee&lt;/li&gt; <br>
+                                &lt;li&gt;Tea&lt;/li&gt; <br>
+                                &lt;li&gt;Milk&lt;/li&gt; <br>
+                                &lt;/ul&gt; <br> </b>
+
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+
+                            </code><br>
+                            <b>Output</b>
+                            <code id="output">
+                                <ul>
+                                    <li>Coffee</li>
+                                    <li>Tea</li>
+                                    <li>Milk</li>
+                                </ul>
+                            </code>
+                                
+                                
+                        </p><br>
+                        <p><b>Style Tag</b></p>
+                        <p>
+                            The &lt;style&gt; tag is used to define style information in (CSS) for a document.
+                            Inside the &lt;style&gt; element you specify how HTML elements should render in a browser. <br>
+                            <b>Tips and Notes</b>
+                            <ul>
+                                <li>When a browser reads a style sheet, it will format the HTML document according to the information in the style sheet. If some properties have been defined for the same selector (element) in different style sheets, the value from the last read style sheet will be used (see example below)!</li>
+                                <li>To link to an external style sheet, use the <link> tag.</li>
+                                <li>To learn more about style sheets, please read our CSS Tutorial.</li>
+                            </ul>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;head&gt; <br>
+                                <b>
+                                &lt;style&gt; <br>
+                                h1 {color:red;}
+                                p {color:blue;}
+                                &lt;/style&gt; <br> </b>
+                                &lt;/head&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;This is a heading&lt;/h1&gt; <br>
+                                &lt;p&gt;This is a paragraph.&lt;/p&gt;<br>
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+
+                            </code><br>
+                            <b>Output</b>
+                            <code id="output">
+                                <html>
+                                <head>
+                                <style>
+                                #H {color:red;}
+                                #S {color:blue;}
+                                </style>
+                                </head>
+                                <body>
+
+                                <h1 id="H">A heading</h1>
+                                <p id="S">A paragraph.</p>
+
+                                </body>
+                                </html>
+                            </code>
+                        </p> <br>
+                        <p><b>Time Tag</b></p>
+                        <p>
+                            The &lt;time&gt; tag defines a specific time (or datetime).
+                            The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results. <br>
+                            <b>Example: </b>   
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;The time element&lt;/h1&gt; <br>
+
+                                &lt;p&gt;Open from &lt;time&gt;10:00&lt;/time&gt; to &lt;time&gt;21:00&lt;/time&gt; every weekday.&lt;/p&gt; <br>
+
+                                &lt;p&gt;Newton School Full-Stack Development Class start <b>&lt;time datetime="2022-01-17 21:00">Day 1&lt;/time&gt;</b>.&lt;/p&gt; <br>
+
+                                &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; The time element does not render as anything special in any of the major browsers.&lt;/p&gt; <br>
+
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+                            </code> <br>
+                            <b>Output</b>
+                            <code id="output">
+                                <p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+                                <p>Newton School Full-Stack Development Class start  <time datetime="2022-01-17 21:00">Day 1</time>.</p>
+                            </code>
+                                
+                        </p><br>
+                </article>
+            </section>
+
+            <section id="Media">
+                <header><b>HTML Media</b></header> 
+                <article>
+                    <p><b>HTML Image Tag</b></p>
+                    <p>
+                        The <img> tag is used to embed an image in an HTML page.
+                        Images are not technically inserted into a web page; images are linked to web pages. The <img> tag creates a holding space for the referenced image.
+                        The <img> tag has two required attributes:
+                        <ul>
+                            <li>src - Specifies the path to the image</li>
+                            <li>alt - Specifies an alternate text for the image, if the image for some reason cannot be displayed</li>
+                        </ul>
+                        <b>Note:</b> Also, always specify the width and height of an image. If width and height are not specified, the page might flicker while the image loads. <br>
+                        <b>Tip:</b> To link an image to another document, simply nest the <img> tag inside an <a> tag (see example below).
+                    </p><br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+
+                            &lt;h1&gt;The img element&lt;/h1&gt;<br>
+
+                            <b>&lt; img src="html5_logo.png" alt="HTML 5 Logo" width="500" height="600" &gt; <br></b>
+
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code><br>
+                        <b>Output</b>
+                        <code id="output">
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
+
+                            <h1>The img element</h1>
+
+                            <img src="../Mini Projects (NS)/html5_logo.png" alt="HTML 5 Logo" width="300" height="300">
+
+                            </body>
+                            </html>
+
+                        </code>
+                        
+                    </p><br>
+                    <p><b>HTML Audio Tag</b></p>
+                    <p>
+                        The &lt;audio&gt; tag is used to embed sound content in a document, such as music or other audio streams. <br>
+                        The &lt;audio&gt; tag contains one or more &lt;source&gt; tags with different audio sources. The browser will choose the first source it supports. <br>
+                        The text between the &lt;audio&gt; and &lt;/audio&gt; tags will only be displayed in browsers that do not support the &lt;audio&gt; element. <br>
+                        There are three supported audio formats in HTML: MP3, WAV, and OGG.
+                    </p>
+                    <br>
+                    <p>
+                        <p><b>Example: </b></p>
+
+                        <code>
+                            &lt;!DOCTYPE html&gt; <br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+
+                            &lt;h1&gt;The audio element&lt;/h1&gt;<br>
+
+                            &lt;p&gt;Click on the play button to play a sound:&lt;/p&gt;<br>
+
+                            <b>&lt;audio controls&gt;<br>
+                            &lt;source src="krishna-bhagwan-bansuri.ogg" type="audio/ogg"&gt;<br>
+                            &lt;source src="krishna-bhagwan-bansuri.mp3" type="audio/mpeg"&gt;<br>
+                            Your browser does not support the audio element.
+                            &lt;/audio&gt;<br></b>
+
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code>
+                        <br>
+                        <p><b>Output</b></p>
+                        <code id="output">
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
+
+                            <h1>The audio element</h1>
+
+                            <p>Click on the play button to play a sound:</p>
+
+                            <audio controls>
+                            <source src="../Mini Projects (NS)/krishna-bhagwan-bansuri-54467.ogg" type="audio/ogg">
+                            <source src="../Mini Projects (NS)/krishna-bhagwan-bansuri-54467.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                            </audio>
+
+                            </body>
+                            </html>
+
+                        </code>
+                        
+                    </p><br>
+
+                    <p><b>HTML Video Tag</b></p>
+                    <p>
+                        The &lt;video&gt; tag is used to embed video content in a document, such as a movie clip or other video streams. <br>
+                        The &lt;video&gt; tag contains one or more &lt;source&gt; tags with different video sources. The browser will choose the first source it supports. <br>
+                        The text between the &lt;video&gt; and &lt;/video&gt; tags will only be displayed in browsers that do not support the &lt;video&gt; element. <br>
+                        There are three supported video formats in HTML: MP4, WebM, and OGG. <br>
+                    </p> <br>
+                    <p>
+                        <p><b>Example: </b></p>
+                        <code>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;body&gt;<br>
+
+                            &lt;h1&gt;The video element&lt;/h1&gt;<br>
+
+                            <b>&lt;video width="320" height="240" controls&gt;<br>
+                            &lt;source src="movie.mp4" type="video/mp4"&gt;<br>
+                            &lt;source src="movie.ogg" type="video/ogg"&gt;<br>
+                            Your browser does not support the video tag.
+                            &lt;/video&gt;<br></b>
+
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </code>
+                        <br>
+                        <p><b>Output</b></p>
+                        <code id="output">
+                            <!DOCTYPE html>
+                            <html>
+                            <body>
+
+                            <h1>The video element</h1>
+
+                            <!-- <video width="50%" height="50%"  controls>
+                            <source src="https://www.youtube.com/watch?v=L5TkeshVRhg" type="video/mp4">
+                            <!-- <source src="F:\Mini Projects (NS)\Tom_and_Jerry_new_episode_2020____Tom_and_Jerry_Car_Race_Full_Movie_in_hindi%2C_tamil%2C_malayalam%2C(360p).mp4"  type="video/ogg"> -->
+                            <!-- Your browser does not support the video tag. -->
+                            <!-- </video> --> 
+                            <!-- <source src="https://www.youtube.com/watch?v=_jcR7z8lq_c" type="video/mp4"> -->
+                            <video controls width="250">
+                                <source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4" type="video/mp4">
+                            </video>
+
+                            </body>
+                            </html>
+                        </code>
+                    </p>
+
+                </article>
+
+            </section>
+            <section id="Tables">
+                <header><b>HTML Tables</b></header>
+                <article>
+                    <p><b>HTML Table tag</b></p>
+                    <p>
+                        The &lt;table&gt; tag defines an HTML table.
+                        An HTML table consists of one &lt;table&gt; element and one or more &lt;tr&gt;, &lt;th&gt;, and &lt;td&gt; elements.
+                        The &lt;tr&gt; element defines a table row, the &lt;th&gt; element defines a table header, and the &lt;td&gt; element defines a table cell.
+                        An HTML table may also include &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, &lt;tfoot&gt;, and &lt;tbody&gt; elements. <br>
+
+                        <b>&lt;tr&gt; Tag</b>
+                        <p>
+                            The &lt;tr&gt; tag defines a row in an HTML table.
+                            A &lt;tr&gt; element contains one or more &lt;th&gt; or &lt;td&gt; elements.
+                        </p><br>
+                        <b>&lt;th&gt; Tag</b>
+                        <p>
+                            The &lt;th&gt; tag defines a header cell in an HTML table.
+                            An HTML table has two kinds of cells: <br>
+                            <ul>
+                                <li>Header cells - contains header information (created with the &lt;th&gt; element)</li>
+                                <li>Data cells - contains data (created with the &lt;td> element)</li>
+                            </ul>
+                            The text in &lt;th&gt; elements are bold and centered by default.
+                            The text in &lt;td&gt; elements are regular and left-aligned by default.
+                        </p><br>
+
+                        <b>&lt;td&gt; Tag</b>
+                        <p>
+                            The &lt;td&gt; tag defines a standard data cell in an HTML table.
+                            An HTML table has two kinds of cells:
+                            <ul>
+                                <li>Header cells - contains header information (created with the &lt;th&gt; element)</li>
+                                <li>Data cells - contains data (created with the &lt;td&gt; element)</li>
+                            </ul>
+                            The text in &lt;td&gt; elements are regular and left-aligned by default.
+                            The text in &lt;th&gt; elements are bold and centered by default. 
+
+                        </p><br>
+
+                        <b>&lt;thead&gt; Tag</b>
+                        <p>
+                            The &lt;thead&gt; tag is used to group header content in an HTML table.
+                            The &lt;thead&gt; element is used in conjunction with the &lt;tbody&gt; and &lt;tfoot&gt; elements to specify each part of a table (header, body, footer).
+                            Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. <br>
+                            <b>Note:</b> The &lt;thead&gt; element must have one or more &lt;tr&gt; tags inside.
+                            The &lt;thead&gt; tag must be used in the following context: As a child of a &lt;table&gt; element, after any &lt;caption&gt; and &lt;colgroup&gt; elements, and before any &lt;tbody&gt;, &lt;tfoot&gt;, and &lt;tr&gt; elements. <br>
+                            <b>Tip:</b> The &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; elements will not affect the layout of the table by default. However, you can use CSS to style these elements (see example below)!
+                        </p> <br>
+
+                        <b>&lt;caption&gt; Tag</b>
+                        <p>
+                            The &lt;caption&gt; tag defines a table caption.
+                            The &lt;caption&gt; tag must be inserted immediately after the &lt;table&gt; tag. <br>
+                            <b>Tip:</b> By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption.
+                        </p> <br>
+
+                        <b>&lt;colgroup&gt; Tag</b>
+                        <p>
+                            The &lt;colgroup&gt; tag specifies a group of one or more columns in a table for formatting.<br>
+                            The &lt;colgroup&gt; tag is useful for applying styles to entire columns, instead of repeating the styles for each cell, for each row.<br>
+                            <b>Note:</b> The &lt;colgroup&gt; tag must be a child of a &lt;table&gt; element, after any &lt;caption&gt; elements and before any &lt;thead&gt;, &lt;tbody&gt;, &lt;tfoot&gt;, and &lt;tr&gt; elements. <br>
+                            <b>Tip:</b> To define different properties to a column within a &lt;colgroup&gt;, use the &lt;col&gt; tag within the &lt;colgroup&gt; tag. 
+                        </p><br>
+
+                        <b>&lt;tfoot&gt; Tag</b>
+                        <p>
+                            The &lt;tfoot&gt; tag is used to group footer content in an HTML table.
+                            The &lt;tfoot&gt; element is used in conjunction with the &lt;thead&gt; and &lt;tbody&gt; elements to specify each part of a table (footer, header, body).
+                            Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. <br>
+                            <b>Note:</b> The &lt;tfoot&gt; element must have one or more &lt;tr&gt; tags inside. <br>
+                            The &lt;tfoot&gt; tag must be used in the following context: As a child of a &lt;table&gt; element, after any &lt;caption&gt;, &lt;colgroup&gt;, &lt;thead&gt;, and &lt;tbody&gt;elements. <br>
+                            <b>Tip:</b> The &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; elements will not affect the layout of the table by default. However, you can use CSS to style these elements. 
+                        </p><br>
+                        <b>&lt;tbody&gt; Tag</b>
+                        <p>
+                            The &lt;tbody&gt; tag is used to group the body content in an HTML table.
+                            The &lt;tbody&gt; element is used in conjunction with the &lt;thead&gt; and &lt;tfoot&gt; elements to specify each part of a table (body, header, footer).
+                            Browsers can use these elements to enable scrolling of the table body independently of the header and footer. Also, when printing a large table that spans multiple pages, these elements can enable the table header and footer to be printed at the top and bottom of each page. <br>
+                            <b>Note:</b> The &lt;tbody&gt; element must have one or more &lt;tr&gt; tags inside.
+                            The &lt;tbody&gt; tag must be used in the following context: As a child of a &lt;table&gt; element, after any &lt;caption&gt;, &lt;colgroup&gt;, and &lt;thead&gt; elements. <br>
+                            <b>Tip:</b>The &lt;thead&gt;, &lt;tbody&gt;, and &lt;tfoot&gt; elements will not affect the layout of the table by default. However, you can use CSS to style these elements
+                        </p> <br>
+                        <p>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;head&gt;<br>
+                                &lt;style&gt;<br>
+                                table, th, td {
+                                border: 1px solid black;
+                                }
+                                &lt;/style&gt;<br>
+                                &lt;/head&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The table, tr, th, td, caption, colgroup, thead, tbody, and tfoot elements&lt;/h1&gt;<br>
+                                
+
+                                <b>&lt;table&gt;<br>
+                                &lt;thead&gt;<br>
+                                    &lt;tr&gt;<br>
+                                    &lt;th&gt;Month&lt;/th&gt;<br>
+                                    &lt;th&gt;Savings&lt;/th&gt;<br>
+                                    &lt;/tr&gt;<br>
+                                &lt;/thead&gt;<br>
+                                &lt;tbody&gt;<br>
+                                    &lt;tr&gt;<br>
+                                    &lt;td&gt;January&lt;/td&gt;<br>
+                                    &lt;td&gt;$100&lt;/td&gt;<br>
+                                    &lt;/tr&gt;<br>
+                                    &lt;tr&gt;<br>
+                                    &lt;td&gt;February&lt;/td&gt;<br>
+                                    &lt;td&gt;$80&lt;/td&gt;<br>
+                                    &lt;/tr&gt;<br>
+                                &lt;/tbody&gt;<br>
+                                &lt;tfoot&gt;<br>
+                                    &lt;tr&gt;<br>
+                                    &lt;td&gt;Sum&lt;/td&gt;<br>
+                                    &lt;td&gt;$180&lt;/td&gt;<br>
+                                    &lt;/tr&gt;<br>
+                                &lt;/tfoot&gt;<br>
+                                &lt;/table&gt;<br>
+                                </b>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code> <br>
+                            <p><b>Output</b></p>
+
+                            <code id="output">
+                                <!DOCTYPE html>
+                                <html>
+                                <head>
+                                <style>
+                                table, th, td {
+                                border: 1px solid black;
+                                }
+                                </style>
+                                </head>
+                                <body>
+
+                                <h1>The table, tr, th, td, caption, colgroup, thead, tbody, and tfoot elements</h1>
+
+                                <table>
+                                <thead>
+                                    <tr>
+                                    <th>Month</th>
+                                    <th>Savings</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                    <td>January</td>
+                                    <td>$100</td>
+                                    </tr>
+                                    <tr>
+                                    <td>February</td>
+                                    <td>$80</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                    <td>Sum</td>
+                                    <td>$180</td>
+                                    </tr>
+                                </tfoot>
+                                </table>
+
+                                </body>
+                                </html>
+                            </code>
+
+
+                        </p>
+                    </p> <br>
+                </article>
+
+            </section>
+            <section id="Font Styles">
+                <header><b>HTML Font Style</b></header>
+                    <article>
+                        <p>
+                            <p><b>Bold tag</b></p>
+                        
+                            The &lt;b&gt; tag specifies bold text without any extra importance. <br>
+                            <b>Tips and Notes</b>
+                            <ul>
+                                <li>According to the HTML5 specification, the &lt;b&gt; tag should be used as a LAST resort when no other tag is more appropriate. The specification states that headings should be denoted with the &lt;h1&gt; to &lt;h6&gt; tags, emphasized text should be denoted with the &lt;em&gt; tag, important text should be denoted with the &lt;strong&gt; tag, and marked/highlighted text should be denoted with the &lt;mark&gt; tag.</li>
+                                <li>You can also use the following CSS to set bold text: "font-weight: bold;".</li>
+                            </ul>
+                            <b>Example:</b>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The b element&lt;/h1&gt;<br>
+
+                                &lt;p&gt;This is normal text - <b> &lt;b&gt;and this is bold text&lt;/b&gt;.</b>&lt;/p&gt;<br>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code><br>
+                            <b>Output</b>
+                            <code id="output">
+                                <h1>The b elemnt</h1>
+                                <p>This is normal text - <b> and this is bold text.</b></p>
+                            </code>
+                            
+                        </p> <br>
+                        <p>
+                            <p><b>Quotation Tag</b></p>
+                            The &lt;q&gt; tag defines a short quotation.
+                            Browsers normally insert quotation marks around the quotation. <br>
+                            <b>Tip:</b> Use  &lt;blockquote&gt; for long quotations. 
+                            <br>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt;<br>
+                                &lt;html&gt;<br>
+                                &lt;body&gt;<br>
+
+                                &lt;h1&gt;The q element&lt;/h1&gt;<br>
+
+                                &lt;p&gt;WWF's goal is to: <br>
+                                &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;<br>
+                                We hope they succeed.&lt;/p&gt;<br>
+
+                                &lt;/body&gt;<br>
+                                &lt;/html&gt;<br>
+                            </code><br> 
+                            <b>Output</b>
+                            <code id="output">
+                                <p>WWF's goal is to:
+                                <q>Build a future where people live in harmony with nature.</q>
+                                 We hope they succeed.</p>
+                            </code>  
+                        </p><br>
+                        <p>
+                            <p><b>HTML &lt;i&gt; Tag</b></p>
+                            The &lt;i&gt;tag defines a part of text in an alternate voice or mood. The content inside is typically displayed in italic.
+                            The &lt;i&gt; tag is often used to indicate a technical term, a phrase from another language, a thought, a ship name, etc.
+                            Use the &lt;i&gt; element only when there is not a more appropriate semantic element, such as: <br>
+                            <ul>
+                                <li><a href="https://www.w3schools.com/tags/tag_em.asp" style="color: black; text-decoration: none; size: 5px;"> <u>&lt;em&gt;</u>(emphasized text)</a></li>
+                                <li><a href="https://www.w3schools.com/tags/tag_em.asp" style="color: black; text-decoration: none; size: 5px;"> <u>&lt;strong&gt;</u>(important text)</a></li>
+                                <li><a href="https://www.w3schools.com/tags/tag_em.asp" style="color: black; text-decoration: none; size: 5px;"> <u>&lt;mark&gt;</u>(marked/highlighted text)</a></li>
+                                <li><a href="https://www.w3schools.com/tags/tag_em.asp" style="color: black; text-decoration: none; size: 5px;"> <u>&lt;cite&gt;</u>(the title of a work)</a></li>
+                                <li><a href="https://www.w3schools.com/tags/tag_em.asp" style="color: black; text-decoration: none; size: 5px;"> <u>&lt;dfn&gt;</u>(a definition term)</a></li>
+                            </ul>
+                            <p><b>Example: </b></p>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+                                
+                                &lt;h1&gt;The i element&lt;/h1&gt; <br>
+                                
+                                &lt;p&gt;&lt;i&gt;Lorem ipsum&lt;/i&gt; is the most popular filler text in history.&lt;/p&gt; <br>
+                                
+                                &lt;p&gt;The &lt;i&gt;RMS Titanic&lt;/i&gt;, a luxury steamship, sank on April 15, 1912 after striking an iceberg.&lt;/p&gt; <br>
+                                
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+                            </code>
+                            <b>Output</b>
+                            <code id="output">
+                                <p><i>Lorem ipsum</i> is the most popular filler text in history.</p>
+                                <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+                            </code>
+                        </p> <br>
+                        <p>
+                            <p><b>Underline Tag</b></p>
+                            The &lt;u&gt; tag represents some text that is unarticulated and styled differently from normal text, such as misspelled words or proper names in Chinese text. The content inside is typically displayed with an underline. You can change this with CSS (see example below). <br>
+                            <b>Tip:</b> Avoid using the &lt;u&gt; element where it could be confused for a hyperlink! <br>
+                            <b>Example: </b>
+                            <code>
+                                &lt;!DOCTYPE html&gt; <br>
+                                &lt;html&gt; <br>
+                                &lt;body&gt; <br>
+
+                                &lt;h1&gt;The u element&lt;/h1&gt; <br>
+
+                                &lt;p&gt;This is some &lt;u&gt;mispeled&lt;/u&gt; text.&lt;/p&gt; <br>
+
+                                &lt;/body&gt; <br>
+                                &lt;/html&gt; <br>
+                            </code><br>
+                            <b>Output</b>
+                            <code id="output">
+                                <p>This is some <u>mispeled</u> text.</p>
+                            </code>
+                        </p>
+
+                    </article>
+            </section> <br><br>
+
+            <p id="last">Now, You're at the end of the page.. <br> Thanks for your visit.. <br> <b>HAPPY LEARNING!</b></p>
+        </main>
+    </body>
+</html>
